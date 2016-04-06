@@ -1,10 +1,20 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
- 
-gulp.task('compress', function() {
-  return gulp.src('jquery.final-countdown.js')  	
-    .pipe(uglify())
-    .pipe(rename('jquery.final-countdown.min.js'))
-    .pipe(gulp.dest('.'));
-});
+'use strict';
+
+const gulp = require('gulp');
+const plugins = require('gulp-load-plugins')();
+const config = require('./gulp/configs/main.config');
+const register = require('./gulp/utils/register');
+
+register(gulp, plugins, config)([
+  'build-js',
+  'build-scss',
+  'copy',
+  'serve',
+  'watch',
+  'deploy'
+]);
+
+gulp.task('build', gulp.parallel('build-js', 'build-scss', 'copy'));
+gulp.task('default', gulp.series('build', gulp.parallel('watch', 'serve')));
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
