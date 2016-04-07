@@ -140,7 +140,7 @@ body {
 #footer .i-love-you:hover {
   opacity: 1;
 }
-#footer.i-love-you:hover:before,
+#footer .i-love-you:hover:before,
 #footer .i-love-you:hover:after {
   opacity: 1;
 }
