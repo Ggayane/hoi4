@@ -16,5 +16,3 @@ register(gulp, plugins, config)([
 
 gulp.task('build', gulp.parallel('build-js', 'build-scss', 'copy'));
 gulp.task('default', gulp.series('build', gulp.parallel('watch', 'serve')));
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
