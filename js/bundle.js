@@ -4,10 +4,20 @@ $(document).ready(function () {
     setTimeout(fakeLoad, 4000);
     function fakeLoad() {
         $('#loader').fadeOut(1000);
-        $('#container').fadeIn(1000);
+        $('#wrap').fadeOut(3000);
+        $('#container > .countdown.countdown-container.container').animate({color:'#fff'}, 3000, function () {
+            $(this).css('z-index', 999999)
+        });
+        setTimeout(aaa, 2500);
+
         fadeContent();
     }
+function aaa(){
+   // $('#container > .countdown.countdown-container.container').delay(1000).css('z-index', 999999);
 
+    $('#footer').css('z-index', 999999);
+    $('#quotes').css('z-index', 999999);
+}
 // quotes
 
     var quotesArray = [
@@ -45,7 +55,7 @@ $(document).ready(function () {
             canvas_days: 'canvas_days'
         },
         seconds: {
-            borderColor: '#748074',
+            borderColor: '#00482B',
             borderWidth: '6'
         },
         minutes: {
