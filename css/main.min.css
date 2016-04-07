@@ -32,6 +32,9 @@ body {
     text-align: center;
     padding: 10px 0;
 }
+#footer > a{
+    color: rgba(204, 204, 204, 0.68);
+}
 #wrap{
     position: absolute;
     width:100%;
@@ -134,14 +137,4 @@ body {
 .i-love-you:hover:after {
   right: -15px;
 }
-#footer .i-love-you:before,
-#footer .i-love-you:after {
-  opacity: 0;
-}
-#footer .i-love-you:hover {
-  opacity: 1;
-}
-#footer .i-love-you:hover:before,
-#footer .i-love-you:hover:after {
-  opacity: 1;
-}
+
