@@ -6,7 +6,6 @@ $(document).ready(function () {
         $('#loader').fadeOut(1000);
         $('#container').fadeIn(1000);
         fadeContent();
-
     }
 
 // quotes
