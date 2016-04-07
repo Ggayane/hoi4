@@ -24,7 +24,6 @@ body {
 }
 
 #footer{
-    position: absolute;
     bottom:0;
     color: rgba(204, 204, 204, 0.68);
     z-index: 9999;
