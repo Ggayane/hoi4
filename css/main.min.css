@@ -96,3 +96,51 @@ body {
 .text .type-time {
     font-size: 20px;
 }
+.i-love-you {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+.i-love-you:before,
+.i-love-you:after {
+  content: "\2665";
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  top: 3px;
+  opacity: 0;
+}
+.i-love-you:before {
+  left: -10px;
+}
+.i-love-you:after {
+  right: -10px;
+}
+.i-love-you:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.i-love-you:hover:before,
+.i-love-you:hover:after {
+  opacity: 1;
+}
+.i-love-you:hover:before {
+  left: -15px;
+}
+.i-love-you:hover:after {
+  right: -15px;
+}
+#footer .i-love-you:before,
+#footer .i-love-you:after {
+  opacity: 0;
+}
+#footer .i-love-you:hover {
+  opacity: 1;
+}
+#footer .i-love-you:hover:before,
+#footer .i-love-you:hover:after {
+  opacity: 1;
+}
