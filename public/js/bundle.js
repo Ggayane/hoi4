@@ -29,7 +29,7 @@ function aaa(){
 
     function fadeContent() {
         var rand = Math.floor(Math.random() * quotesArray.length);
-        $("#quotes").fadeIn(500).delay(4000).fadeOut(500, function () {
+        $("#quotes").fadeIn(500).delay(8000).fadeOut(500, function () {
             $(this).html(quotesArray[rand]);
             fadeContent();
         });
