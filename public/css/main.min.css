@@ -1,4 +1,4 @@
-body{
+body {
     background: #000;
 }
 
@@ -9,41 +9,57 @@ body{
     position: absolute;
     z-index: 9999;
 }
-#container{
+
+#quotes {
+    display: none;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    z-index: 900;
+    margin-top: 30px;
+}
+
+#container {
     width: 100%;
     height: 100%;
     padding: 20px;
-    /*background: url('../images/hearts-of-iron-IV.jpg') no-repeat top center;*/
+    background: url('../images/hoi.jpg') no-repeat top center;
     background-size: 100%;
+    padding-top: 100px;
 }
-#container:after{
+
+#container:after {
     content: '';
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.46), #000);
 }
+
 .countdown-container {
+    z-index: 999;
     position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
+
 .clock-item .inner {
     height: 0px;
     padding-bottom: 100%;
     position: relative;
     width: 100%;
 }
+
 .clock-canvas {
     background-color: rgba(255, 255, 255, .1);
     border-radius: 50%;
     height: 0px;
     padding-bottom: 100%;
 }
+
 .text {
     color: #fff;
     font-size: 30px;
@@ -55,9 +71,11 @@ body{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
     width: 100%;
 }
+
 .text .val {
     font-size: 50px;
 }
+
 .text .type-time {
     font-size: 20px;
 }
