@@ -30,6 +30,7 @@ body {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    position:relative;
 }
 #footer > a{
     color: rgba(204, 204, 204, 0.68);
