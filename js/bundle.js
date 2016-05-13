@@ -41,7 +41,7 @@ function aaa(){
     var target = new Date('05-05-2016');
 	target.setHours(19,00,0,0);
 	if(today.getTime() >= target.getTime()){
-		audioElement.stop();
+		audioElement.pause();
 		$('#container').hide();
 		$('#it_is_over').css('display', 'block');
 	}
