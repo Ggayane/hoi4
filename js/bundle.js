@@ -38,7 +38,7 @@ function aaa(){
 // timer
     var today = new Date();
     // My target date is this month 30th 9.25pm
-    var target = new Date('06-06-2016');
+    var target = new Date('05-05-2016');
 	target.setHours(19,00,0,0);
 	if(today.getTime() >= target.getTime()){
 		audioElement.stop();
