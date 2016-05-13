@@ -39,7 +39,7 @@ function aaa(){
     var today = new Date();
     // My target date is this month 30th 9.25pm
     var target = new Date('06-06-2016');
-    target.setHours(19,00,0,0);
+   // target.setHours(19,00,0,0);
 
     $('#container > .countdown.countdown-container.container').final_countdown({
         'start': today.getTime() / 1000,
