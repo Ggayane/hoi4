@@ -148,3 +148,11 @@ body {
 	transition: all 0.5s;
     background-size: 100%;
 }
+
+#it_is_over{
+	display: none;
+	text-align: center;
+	margin-top: 10%;
+	font-size:30px;
+	font-family: cursive;
+}
