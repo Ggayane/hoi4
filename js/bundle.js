@@ -74,5 +74,14 @@ target.setHours(19,00,0,0);
     }, function () {
 // Finish callback
     });
+    
+// show img
+$('#for_imgNote').mousemove(function(e){
+	$('#imgNote').css({'top': e.pageY-300,'left': e.pageX-200, 'opacity': '1'});
+});
+
+$('#for_imgNote').mouseleave(function(e){
+	$('#imgNote').css({'opacity': '0'});
+});
 
 });
